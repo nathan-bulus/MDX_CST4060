@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+        <title>Coursework 2</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="row">
+                    <img src="resources/img/mdx_logo.png" alt="Omnifood logo" class="logo">
+                </div>
+            </nav>
+            <div class="hero-text-box">
+                <h1>Shekwonyadu Nathan Bulus</h1>
+                <h1>M00693835</h1>
+                <h1>CST4070<br> Coursework 2</h1>
+            </div>
+        </header>
+        
+        <section class="analysis-section">
+            <div class="row">
+                <h2>Data Description</h2>                    
+                <p class="long-copy">
+                        The given dataset is the water quality measurements taken in the Boonsong Wildlife Preserve from 1998 to 2016. The dataset contains a total of 136825 records. There are 10 different loactions, 106 chemicals of which 12 are pesticides, 50 are chemical compounds and 44 are biochemical elemnts, collected over 18 years.
+                </p>
+            </div>
+
+            <div class="row">   
+                <div class="analysis">
+                    <div id="vis"></div>
+                    <script type="text/javascript" src="resources/js/Analysis.js"></script>   
+                </div>  
+                <p class="long-copy">
+                    From the intial analysis we discover that about 41 chemicals were not frequently measure. They will not be considered during futher analysis
+                </p>
+            </div>                  
+        </section> 
+        <section class="task_a" id="works">
+            <div class="row">
+                <h2>Trends And Anomalies </h2>
+                <p class="long-copy">
+                     Describe trends and anomalies with respect to chemical contamination in the Boonsong Lekagul waterways
+                </p>
+            </div>
+            <div class="row">   
+                <div class="analysis">
+                    <h2>Trends</h2>
+                    <div id="vis2"></div>
+                    <script type="text/javascript" src="resources/js/Trends.js"></script>   
+                </div>  
+                <p class="long-copy">
+                   There seems to be a constant increase in the water tempearature every year between June and August in the waterways.This appears to be a seasonal change, rather than the presence of a chemical contaminat. The water temperature also relates to the disolved oxyegn concentrationin water 
+                </p>
+                <div class="analysis">
+                    <div id="vis3"></div>
+                    <script type="text/javascript" src="resources/js/Trends.js"></script>   
+                </div> 
+                <p class="long-copy">
+                        The concentration of dissolved oxygen in the water is inversly related to water temperature as seenin the chart above. During summer there is a decrease in the concenteation level while there is a rise during winter.
+                </p>
+                <h2>Anomalies </h2>
+                <div class="row">
+                    <div class="analysis">
+                        <div id="vis4"></div>
+                        <script type="text/javascript" src="resources/js/Anomalies.js"></script>   
+                    </div>
+                    <p class="long-copy">
+                        There was also an unusual uptrend in the water temperatuere measurements in the 2016 at Chai. There was also an uptrend in the total hardness. This could be as a result of incresed calcium and magnesium in the water.
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="analysis">
+                        <div id="vis8"></div>
+                        <script type="text/javascript" src="resources/js/Trends.js"></script>   
+                    </div>
+                    <p class="long-copy">
+                        There is no significant increase of Calcium and Magnesium in chai around 2016. The unusal increase could be form another chemical or natural factors
+                    </p>
+                </div>
+                <div>
+                    <div class="analysis">
+                        <div id="vis1"></div>
+                        <script type="text/javascript" src="resources/js/Anomalies.js"></script>   
+                    </div>
+                    <p class="long-copy">
+                        On The 15th August 2003 there was a large spike in different locations  with the heighest at Kohsoom only on that single day but dropped back to normal the next day.
+                        Further analysis to detemine what measures caused this unusual spike show that Iron, Copper, Chromium and Manganese all had high spikes at Kohsoom, although Iron also had the same spike in other locations like Busarakhan, Chai, Kannika, Sakda, and Somchair. Iron went from an average value of 1.9 to abot 3164. The only thing the measures have in comon is that they are different types of metal. This anomaly could have accoured as a result of faulty reading instruments or from improper data logging.
+                    </p>
+                </div>
+            </div>  
+             <div class="row">
+                <h2>Visualisation Insight</h2>
+                <p class="long-copy">
+                    The Line chart is used to show the constant increase and decrese of the water temperature measurement during summer and winter and how it is inversly related to the concentration of dissolved oxygen in the water over the 18 year period at the different locations. The line chart give users understand the pattern in visual withiout much proir knowledge of the readings. It also make it easier to show anomalies or unusual behavior that occur over time. 
+                </p>
+            </div>
+            <div class="row">
+                <h2>Marks and Channels</h2>
+                <p class="long-copy">
+                    The visualisation is done using line chart which is encoded using an attribute(column) and an item(row). The horizontal spatial position depicts every month in a year. This is a temporal attribute. The vertical spatial position is shows the average value of the water temperature for each month. Each line represents a deffirent location each with a unique color described on the legend which can be filter using the legend to reduce visual clutter.                  
+                </p>
+            </div>
+        </section>
+        <section class="task_c" id="works">
+            <div class="row">
+                <a href="Question2.html" class="btn btn-full">Question 2</a>
+                <a href="Question3.html" class="btn btn-full">Question 3</a>
+            </div>
+        </section>
+               
+    
+
+
+        
+    </body>
+</html>

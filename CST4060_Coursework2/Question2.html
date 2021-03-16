@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+        <title>Coursework 2</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="row">
+                    <img src="resources/img/mdx_logo.png" alt="Omnifood logo" class="logo">
+                </div>
+            </nav>
+            <div class="hero-text-box">
+                <h1>Shekwonyadu Nathan Bulus</h1>
+                <h1>M00693835</h1>
+                <h1>CST4070<br> Coursework 2</h1>
+            </div>
+        </header>
+        <section class="task_b" id="works">
+            <div class="row">
+                <h2>Question 2</h2>
+                <p class="long-copy">
+                    Describe any data quality and uncertain issues, such as missing data, change in collection frequency, and unrealistic values (e.g. water temperature higher than 100 degrees).
+                </p>
+            </div>            
+            <div class="row">
+                <div class="analysis">
+                    <div id="vis5"></div>
+                    <script type="text/javascript" src="resources/js/DataQuality.js"></script>   
+                </div>
+                <p class="long-copy">
+                    Locations such as Tansanee, Decha, and Achara have few chemical measurements. The measurement at these locations start from 2009. There should be an increase in testing in those loaction.  
+                </p>
+            </div>            
+            <div class="row">
+                <h2>Visualisation Insight</h2>
+                <p class="long-copy">
+                    The Bar chart is used to show the total of all samples collected in each location. The line chart shows thetotal collection done for each year. Based on the line chart we can see that there are some inconsistencies in sample collection over the  years and some location only had samples collectedd from 2009.
+                </p>
+            </div>
+            <div class="row">
+                <h2>Marks and Channels</h2>
+                <p class="long-copy">
+                    The visualisation is done using bar chart which is encoded using an attribute(column) and an item(row). The horizontal spatial position depicts locations. This is a nominal attribute. The vertical spatial position is shows the sum of readings of the diffrent measures for each location. Each bar represents a deffirent location each with a unique color described on the legend which can be filtered.<br><br>
+                    
+                    The Line chart shows the increase and decrease in the amount of samples collected in each year. The horizonatl spatial position depicts the timespan from 1998 to 2016, it is a temporal attribute with the time unit in years. Locations are represented by unique colors  with a Legend to describe each location. The chart can be filtered to reduce visual clutter.                   
+                </p>
+            </div>
+        </section>
+        
+        
+        <section class="task_c" id="works">
+            <div class="row">
+                <a href="index.html" class="btn btn-full">Question 1</a>
+                <a href="Question3.html" class="btn btn-full">Question 3</a>
+            </div>
+        </section>
+               
+    
+
+
+        
+    </body>
+</html>
