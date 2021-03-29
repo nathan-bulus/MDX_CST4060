@@ -1,4 +1,6 @@
 # MDX_CST4060
+
+## Coursework 2
 Data Visualisation with JavaScript
 
 Tasks: Use Vega-Lite to create visualisations that answerthe
