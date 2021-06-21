@@ -3,7 +3,7 @@
 ## Coursework 2
 Data Visualisation with JavaScript
 
-Tasks: Use Vega-Lite to create visualisations that answerthe
+Tasks: Use Vega-Lite to create visualisations that answers the
 following analysis questions:
 
 1. Describe trends and anomalies with respect to chemical contamination in the
